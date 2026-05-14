@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: ceo-dashboard-system
+    env: node
+    plan: starter
+    buildCommand: ""
+    startCommand: "node backend/src/server.js"
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DEMO_MODE
+        value: "true"
