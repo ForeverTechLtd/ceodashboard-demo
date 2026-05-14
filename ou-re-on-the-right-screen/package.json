@@ -1,13 +1,11 @@
 {
-  "name": "ceo-dashboard-system",
+  "name": "@ceo-dashboard/backend",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "start": "node backend/src/server.js",
-    "dev": "node backend/src/server.js",
-    "check": "node --check backend/src/server.js && node --check frontend/src/app.js"
-  },
-  "engines": {
-    "node": ">=20"
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "check": "node --check server.js"
   }
 }
